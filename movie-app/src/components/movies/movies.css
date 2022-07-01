@@ -1,0 +1,64 @@
+.movies{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+margin-top: 30px;
+text-decoration: none;
+
+}
+.movie a{
+    text-decoration: none;
+}
+.movie{
+    padding: 8px 8px 16px;
+    background: rgba(32, 40, 62, 0.8);
+    width: 266px;
+    height: 480px;
+   margin: .5rem;
+   border-radius: 12px;
+transition: .2s;
+font-family: 'Poppins', sans-serif;
+
+}
+.movie:hover{
+    transform: scale(1.01);
+}
+.movie img{
+    max-width: 266px;
+    border-radius: 12px;
+    height: 400px;
+
+}
+.movie-info{
+    display: flex;
+    flex-flow: column;
+    text-align: start;
+    justify-content: space-around;
+    height: 60px;
+ 
+}
+.movie-name{
+    color: white;
+    font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+}
+.movie-add{
+    font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #7B6EF6;
+transition: .4s;
+cursor: pointer;
+}
+.movie-add:hover{
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+.movie .movie-vote{
+  position: absolute;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+ 
+}

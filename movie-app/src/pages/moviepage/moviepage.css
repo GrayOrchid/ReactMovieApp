@@ -1,0 +1,271 @@
+.moviepage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: white;
+}
+.moviepage-container{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+.moviepage-poster{
+    height: 480px;
+    width: 100%;
+    border-radius: 40px;
+    position: relative;
+}
+.img img{
+    border-radius: 40px;
+    width: 100%;
+    height: 480px;
+    position: absolute;
+}
+.filter{
+    border-radius: 40px;
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(54, 44, 146, 0.4) 0%, rgba(18, 98, 151, 0.4) 100%);
+}
+.moviepage-info{
+    width: 100%;
+}
+.moviepage-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    padding: 40px;
+    position: absolute;
+    width: 460px;
+    height: 122px;
+    background: rgba(32, 40, 62, 0.8);
+    backdrop-filter: blur(24px);
+    border-radius: 24px;
+    margin-left: 50px;
+    margin-top: 430px;
+}
+.moviepage-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.moviepage-img img{
+    width: 480px;
+    height: 720px;
+    border-radius: 24px;
+    margin-left: 70px;
+    margin-top: 120px;
+    z-index: 5;
+    position: relative;
+}
+.moviepage-text{
+    width: 480px;
+    min-height: 688px;
+    max-height: 1500px;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    margin-top: 140px;
+    margin-left: 150px;
+}
+.movie-tagline{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+.movie-overview{
+    width: 480px;
+    min-height: 150px;
+    max-height: 1200px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #8E95A9;
+    margin-top: 20px;
+}
+.movie-vote{
+    width: 69px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 8px;
+    color: rgba(255, 173, 73, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.movie-item{
+    margin-top: 25px;
+}
+.movie-item div{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+.movie-item span{
+    color: rgba(118, 126, 148, 1);
+}
+.movie-trailers{
+    display: flex;
+    margin-top: 50px;
+}
+.movie-trailer{
+    width: 30%;
+    text-align: center;
+    color: white;
+    height: 400px;
+margin: .5rem;
+}
+.cast{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.cast-img img{
+    max-width: 266px;
+    border-radius: 12px;
+    height: 400px;
+    border:1px red solid;
+}
+.cast-name{
+    color: rgba(118, 126, 148, 1);
+}
+.cast-character{
+    max-height: 300px;
+    max-width: 266px;
+}
+.block-title{
+    margin-top: 30px;
+    text-align: center;
+}
+.similar-movies{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.cast-character{
+    margin-top: 5px;
+
+}
+.cast-items{
+    padding: 8px 8px 16px;
+    background: rgba(32, 40, 62, 0.8);
+    width: 266px;
+    height: 480px;
+    margin: .5rem;
+   border-radius: 12px;
+position: relative;
+transition: .2s;
+}
+
+.cast img{
+    max-width: 266px;
+    border-radius: 12px;
+    height: 400px;
+
+}
+
+
+@media (max-width: 600px){
+
+    .moviepage-container{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+   }
+    .moviepage-title{
+        margin-top: 100px;
+        width: 100%;
+        z-index: 111;
+        text-align: center;
+        align-items: center;
+        display: none;
+   }
+    .moviepage-img img{
+        width: 100%;
+        margin-left:0;
+        margin-top: 0;
+        height: 400px;
+        width: 300px;
+        height: 350px;
+        padding: 1rem;
+   }
+    .filter{
+        width: 100%;
+        height: 200px;
+   }
+    .img {
+        display: none;
+   }
+   .moviepage-poster{
+        display: none;
+   }
+    .moviepage-info{
+        width: 100%;
+        flex-flow: column;
+   }
+    .moviepage-text{
+        margin: 0;
+        width: 100%;
+   }
+    .movie-tagline{
+        padding: 1rem;
+   }
+    .movie-overview{
+        font-size: 15px;
+        padding: 1rem;
+        width: 270px;
+        margin: 0;
+   }
+    .movie-item{
+        font-size: 10px;
+        padding: 1rem;
+   }
+    .movie-vote{
+        margin: 1rem;
+   }
+    .movie-trailers{
+        flex-flow: column;
+        display: flex;
+   }
+    .movie-trailer{
+        width: 300px;
+   }
+   .cast{
+       display: flex;
+       flex-flow: column;
+        align-items: center;
+   }
+   .cast-item {
+       margin: .5rem;
+   }
+   .similar-movies{
+       width: 100%;
+    display: flex;
+flex-flow: column;
+align-items: center;
+
+   }
+}

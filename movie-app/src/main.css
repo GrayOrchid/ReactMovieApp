@@ -1,0 +1,14 @@
+.favorite-page{
+  
+    width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.favorite-container{
+    width: 80%;
+
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
